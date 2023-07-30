@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Confirmation Redirect</title>
+</head>
+<body>
+  <h1>Confirmation Redirect</h1>
+  <button onclick="redirectToGoogle()">Google</button>
+
+  <script>
+    function redirectToGoogle() {
+      var confirmed = confirm("Do you want to go to google.com?");
+      
+      if (confirmed) {
+        // Redirect to Google
+        window.location.href = "https://www.google.com";
+      } else {
+        // Show a message that user decided to stay
+        alert("You decided to stay.");
+      }
+    }
+  </script>
+</body>
+</html>

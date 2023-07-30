@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Math Operations</title>
+</head>
+<body>
+
+  <script>
+    // Function to get a valid number from the user input
+    function getValidNumber(inputText) {
+      let num;
+      do {
+        num = parseFloat(prompt(inputText));
+      } while (isNaN(num));
+      return num;
+    }
+
+    // Function to perform addition
+    function add(num1, num2) {
+      return num1 + num2;
+    }
+
+    // Function to perform subtraction
+    function subtract(num1, num2) {
+      return num1 - num2;
+    }
+
+    // Function to perform division
+    function divide(num1, num2) {
+      return num1 / num2;
+    }
+
+    // Function to perform multiplication
+    function multiply(num1, num2) {
+      return num1 * num2;
+    }
+
+    // Main function to execute the program
+    function main() {
+      const num1 = getValidNumber("Enter the first number:");
+      const num2 = getValidNumber("Enter the second number:");
+
+      const additionResult = add(num1, num2);
+      const subtractionResult = subtract(num1, num2);
+      const divisionResult = divide(num1, num2);
+      const multiplicationResult = multiply(num1, num2);
+
+      // Displaying the results
+      alert(`Addition: ${additionResult}`);
+      alert(`Subtraction: ${subtractionResult}`);
+      alert(`Division: ${divisionResult}`);
+      alert(`Multiplication: ${multiplicationResult}`);
+    }
+
+    // Calling the main function to start the program
+    main();
+  </script>
+
+</body>
+</html>

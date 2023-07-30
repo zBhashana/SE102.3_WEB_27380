@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Extract Birth Year from NIC Number</title>
+</head>
+<body>
+
+  <script>
+    // Function to extract the birth year from the NIC number
+    function extractBirthYear(nicNumber) {
+      if (nicNumber.length < 4) {
+        return "Invalid NIC number";
+      }
+
+      const birthYear = nicNumber.substr(0, 4);
+      return birthYear;
+    }
+
+    // Main function to execute the program
+    function main() {
+      const nicNumber = prompt("Enter your NIC number (e.g., 2000458596):");
+
+      // Calling the function to extract the birth year
+      const birthYear = extractBirthYear(nicNumber);
+
+      // Displaying the birth year
+      if (birthYear === "Invalid NIC number") {
+        alert(birthYear);
+      } else {
+        alert(`Birth Year: ${birthYear}`);
+      }
+    }
+
+    // Calling the main function to start the program
+    main();
+  </script>
+
+</body>
+</html>
