@@ -1,0 +1,19 @@
+<body>
+form {
+  background-color:azure;
+}
+
+/* Set the background color of the input boxes to white */
+input {
+  background-color: #ffffff;
+}
+
+/* Add a border around the input boxes */
+input {
+  border: 1px solid #000000;
+}
+
+/* Round the corners of the input boxes */
+input {
+  border-radius: 5px;
+}
