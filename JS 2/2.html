@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Video with Mouse Over Play</title>
+</head>
+<body>
+    <h1>Hover over the video to play</h1>
+    <video id="myVideo" width="640" height="360" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <script>
+        // Get a reference to the video element
+        const videoElement = document.getElementById("myVideo");
+
+        // Function to play the video
+        function playVideo() {
+            videoElement.play();
+        }
+
+        // Function to pause the video
+        function pauseVideo() {
+            videoElement.pause();
+        }
+
+        // Add event listeners to enable/disable video playback on mouse events
+        videoElement.addEventListener("mouseover", playVideo);
+        videoElement.addEventListener("mouseout", pauseVideo);
+    </script>
+</body>
+</html>

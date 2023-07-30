@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Change Table Border</title>
+  <style>
+    table {
+      border: 1px solid black; /* Default border for the table */
+    }
+  </style>
+</head>
+<body>
+  <button onclick="changeTableBorder()">Change Border</button>
+  <table id="myTable">
+    <tr>
+      <td>Cell 1</td>
+      <td>Cell 2</td>
+    </tr>
+    <tr>
+      <td>Cell 3</td>
+      <td>Cell 4</td>
+    </tr>
+  </table>
+
+  <script>
+    function changeTableBorder() {
+      const table = document.getElementById('myTable');
+
+      // Check the current border and toggle to the opposite
+      if (table.style.border === '1px solid black') {
+        table.style.border = '2px dashed red';
+      } else {
+        table.style.border = '1px solid black';
+      }
+    }
+  </script>
+</body>
+</html>
